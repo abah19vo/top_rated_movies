@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/movie_list_fragment">
+
+    <fragment
+        android:id="@+id/movie_list_fragment"
+        android:name="com.example.sogeti.mywatchlist.ui.movie_list_fragment.MovieListFragment"
+        >
+        <action
+            android:id="@+id/show_movie_detail"
+            app:destination="@id/movie_detail_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/movie_detail_fragment"
+        android:name="com.example.sogeti.mywatchlist.ui.movie_detail_fragment.MovieDetailFragment"
+        tools:layout="@layout/fragment_movie_detail">
+    </fragment>
+</navigation>
